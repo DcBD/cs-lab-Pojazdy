@@ -6,9 +6,10 @@ using VehicleLib.Enums;
 
 namespace VehicleLib.Classes
 {
-    public abstract class VehicleBase
+    public abstract class VehicleBase : IVehicle
     {
         double _currentSpeed = 0;
+
         MovementEnviroment _enviroment;
         public double MinSpeed { get; set; }
         public double MaxSpeed { get; set; }
